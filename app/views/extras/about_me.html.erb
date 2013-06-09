@@ -1,0 +1,56 @@
+<!-- Header and Nav -->
+
+<div class="clearfix">
+  <div class="site_headline_left">
+    <h1 id="site_header"><%= link_to "It's never too late to hit restart", root_path %></h1>
+    <h4 id="site_tagline">a blog by ebdrummond</h4>
+  </div>
+
+  <div class="site_headline_right">
+    <%= link_to image_tag("github.png"), "http://github.com/ebdrummond", :target => "_blank" %>
+    <%= link_to image_tag("linked_in.png"), "http://www.linkedin.com/pub/erin-drummond/a/59/943/", :target => "_blank" %>
+    <%= link_to image_tag("twitter.png"), "http://twitter.com/ebdrummond", :target => "_blank" %>
+  </div>
+</div>
+
+<nav class="top-bar">
+  <section class="top-bar-section">
+    <div class="row">
+      <div class="twelve columns">
+        <ul class="left" id="nav_bar">
+          <li class="divider"></li>
+          <li><a href="/">Professional Posts</a></li>
+          <li class="divider"></li>
+          <li><a href="personal_index">Personal Musings</a></li>
+          <li class="divider"></li>
+          <li class="active"><a href="about_me">About Me</a></li>
+          <li class="divider"></li>
+          <li><a href="resume">Resume</a></li>
+          <li class="divider"></li>
+          <li><a href="portfolio">Portfolio</a></li>
+          <li class="divider"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</nav>
+
+<!-- End Header and Nav -->
+
+<div class="row">
+  <div class="four columns offset-by-one">
+    <%= image_tag("erin_with_epic_catch.jpg", :height => '600', :width => '400') %>
+  </div>
+  <div class="seven columns">
+    <h4 id="about-me">
+      Rails developer<br><br>
+      Travel junkie<br><br>
+      Wife<br><br>
+      Preferrer of hugs to handshakes<br><br>
+      Kayaker<br><br>
+      Fur mama<br><br>
+      Star Trek lover<br><br>
+      << Catcher of epic fish
+    </h4>
+  </div>
+</div>

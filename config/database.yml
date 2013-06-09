@@ -1,0 +1,18 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: blog_development
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: blog_test
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: blog_production
+  password:
+

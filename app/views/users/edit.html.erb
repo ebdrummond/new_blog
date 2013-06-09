@@ -1,0 +1,21 @@
+Edit your information
+
+<%= form_for(@user, :url => {:action => "update"}) do |f| %>
+  <% if @user.errors.any? %>
+    <ul>
+    <% @user.errors.full_messages.each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+    </ul>
+  <% end %>
+
+  <p><%= f.label :name %><br />
+  <%= f.text_field :name %></p>
+  <p><%= f.label :email %><br />
+  <%= f.text_field :email %></p>
+  <p><%= f.label :password %><br />
+  <%= f.password_field :password %></p>
+  <p><%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %></p>
+  <p><%= f.submit %></p>
+<% end %>
